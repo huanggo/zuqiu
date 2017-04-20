@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html style="font-size: 50px">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>足球圈-注册</title>
+	 <link rel="stylesheet" type="text/css" href="assets/js/modules/lib/css/swiper-3.3.1.min.css">
+   <link rel="stylesheet" type="text/css" href="assets/js/modules/lib/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reg.css">
+<script type="text/javascript">
+		(function (doc, win) {
+			var docEl = doc.documentElement,
+			resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			recalc = function () {
+				var clientWidth = docEl.clientWidth;
+				if (!clientWidth) return;     
+				docEl.style.fontSize = 100 * (clientWidth /750) + 'px';
+			};
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+</script>
+</head>
+<body>
+  <header >足球圈——注册</header>
+  <section>
+  	 
+  	 	<input type="text"class="reg-id"placeholder="手机号" />
+
+  	 	 <input type="text" class="reg-pwd" placeholder="密码" />
+
+  	 	 <input type="text" class="reg-nc" placeholder="昵称" />
+         
+
+          <button class="reg-btn">提 交</button>
+
+
+  	
+  </section>
+
+</body>
+<script src="assets/js/seajs/sea-debug.js"></script>
+<script type="text/javascript">
+	 seajs.config({
+              base:"modules/",  //改变sea加载模块的路径，默认是 sea。js所在目录的父节点
+                alias:{ //创建了一个别名
+                  'zepto':'lib/zepto.min.js',
+                  'tap':'lib/zepto.tap.js'
+                },
+                paths:{
+                  /*"zepto":"http://apps.bdimg.com/libs/"*/
+                }
+             })
+  
+     seajs.use('res',function(res){
+          console.log(res)
+
+     })
+</script>
+</html>

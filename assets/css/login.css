@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+html,body{
+  height: 100%;
+}
+body{
+  font-size: 16px;
+}
+ul,li{
+   list-style: none
+ } 
+ a{
+ 	text-decoration: none;
+ }
+  header,section{
+  position:absolute;
+  left:0;
+  right:0;
+}
+ header{
+ 	 height:44px;
+	 background-color: #88dba0;
+	 text-align: center;
+	 z-index:900;
+	 line-height:44px;
+	 color: #fff;
+	 font-size: 0.4rem;
+ }
+
+.login-fm{
+	margin-top:0.4rem; 
+}
+.input-id{
+    position: absolute;
+    top:2.0rem;
+    left: 1.0rem;
+    border:none;
+    border-bottom: 1px solid #ddd;
+    line-height: 30px;
+    color: #6c6c6c; 
+    text-align: left;
+    width: 4.9rem;
+    height: 0.6rem
+}
+.input-pwd{
+	 position: absolute;
+    top:3.5rem;
+    left: 1.0rem;
+    border:none;
+    border-bottom: 1px solid #ddd;
+    line-height: 30px;
+    color: #6c6c6c; 
+    text-align: left;
+    width: 4.9rem;
+    height: 0.6rem
+}
+.txt{
+	 position: absolute;
+    top:4.5rem;
+    left: 1.0rem;
+    border:none;
+   font-size: 12px;
+    line-height: 30px;
+    color: #6c6c6c; 
+    text-align: left;
+    width: 4.9rem;
+    height: 0.6rem
+}
+.txt a{
+	color:#ccf1d7;
+
+}
+.btn{
+	position: absolute;
+    top:5.5rem;
+    left: 1.0rem;
+    border: none;
+    background: #21b94c;
+    font-size: 12px;
+    line-height: 30px;
+    color: #6c6c6c; 
+    text-align: center;
+    width: 4.9rem;
+    height: 0.6rem
+}
+.wai-login{
+   position: absolute;
+   top:5.2rem;
+   width: 1.2rem;
+   height: 0.5rem;
+   border:1px solid red;
+   line-height: 0.5rem;
+}
+.xl-login img{
+   width: 0.5rem;
+   height: 0.4rem;
+}

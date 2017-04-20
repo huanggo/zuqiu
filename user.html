@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>个人中心</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/js/modules/lib/css/iconfont.css">
+
+	<script type="text/javascript">
+		(function (doc, win) {
+			var docEl = doc.documentElement,
+			resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			recalc = function () {
+				var clientWidth = docEl.clientWidth;
+				if (!clientWidth) return;     
+				docEl.style.fontSize = 100 * (clientWidth /640) + 'px';
+			};
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+</head>
+<body>
+ <header>
+   	    
+   	   <a style="color: #fff;font-size: 0.4rem;" href="#">个人中心</a>
+      
+  </header>
+ 
+ <section class="sec4"  id="wrapper4">
+       <ul class="sec4-ul">
+          <li>
+             <div class="sec2-ul-b1">
+              <img src="assets/img/01_02_03.png">
+              <p class="p-txt1">我叫小梦</p>
+              <p class="p-txt2">我是小萌我怕谁</p>
+              <div class="num">
+                 33333
+                 <i class="iconfont icon-fangzi"></i>
+              </div>
+           </div>
+             <ul class="sec4-nav">
+              <li><a href="#" class="sele">照片(1)</a></li>
+              <li><a href="#">关注(2)</a></li>
+              <li><a href="#">粉丝(200)</a></li>
+            </ul>
+
+            <div class="sec4-ul-b2">
+             <img src="assets/img/01_01_03.png">
+          </div> 
+          </li>
+
+       </ul>
+    
+
+  </section>
+
+
+<footer id="footer">
+      <a class="home" href="/index.html">
+          <i class="iconfont icon-fangzi  "></i>
+          <span class="txt ">首页</span>
+      </a>
+       <a class="home" href="/found.html">
+          <i class="iconfont icon-sousuo"></i>
+          <span>发现</span>
+      </a>
+       <a class="home" href="#">
+          <i class=" iconfont icon-xiangji"></i>  
+      </a>
+       <a class="home" href="#">
+          <i class="iconfont icon-wode sele"></i>
+          <span class="sele">我的</span>
+      </a>
+       <a class="home" href="#">
+          <i class="iconfont icon-tuichu"></i>
+          <span>退出</span>
+      </a> 
+
+   </footer>
+</body>
+</html>

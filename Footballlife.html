@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>足球生活</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/js/modules/lib/css/iconfont.css">
+
+	<script type="text/javascript">
+		(function (doc, win) {
+			var docEl = doc.documentElement,
+			resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			recalc = function () {
+				var clientWidth = docEl.clientWidth;
+				if (!clientWidth) return;     
+				docEl.style.fontSize = 100 * (clientWidth /640) + 'px';
+			};
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+</head>
+<body>
+  <header>
+      <button class="sele">热点</button><button>关注</button>
+      
+   </header>
+ 
+  <section class="sec5" >
+          <ul class="sec1-nav">
+            <li><a href="#" >足球场</a></li>
+            <li><a href="#"class="sele">足球生活</a></li>
+            <li><a href="#">足球美女</a></li>
+        </ul>
+
+        <div class="sec1-box" id="wrapper5" >
+           <ul class="wrap-ul">
+              <li>
+                <a href="#">
+                  <img src="assets/img/01_03.png">
+                  <p>徐云龙争橡</p>
+
+                </a> 
+              </li>
+               <li>
+                <a href="#">
+                  <img src="assets/img/01_03.png">
+                  <p>徐云龙争橡</p>
+
+                </a> 
+              </li>
+               <li>
+                <a href="#">
+                  <img src="assets/img/01_03.png">
+                  <p>徐云龙争橡</p>
+
+                </a> 
+              </li>
+               <li>
+                <a href="#">
+                  <img src="assets/img/01_03.png">
+                  <p>徐云龙争橡</p>
+
+                </a> 
+              </li>
+               <li>
+                <a href="#">
+                  <img src="assets/img/01_03.png">
+                  <p>徐云龙争橡</p>
+
+                </a> 
+              </li>
+               <li>
+                <a href="#">
+                  <img src="assets/img/01_03.png">
+                  <p>徐云龙争橡</p>
+
+                </a> 
+              </li>
+               <li>
+                <a href="#">
+                  <img src="assets/img/01_03.png">
+                  <p>徐云龙争橡</p>
+
+                </a> 
+              </li>
+             
+           </ul>
+        </div>
+  </section>
+
+
+<footer id="footer">
+      <a class="home" href="/index.html">
+          <i class="iconfont icon-fangzi sele"></i>
+          <span class="txt sele">首页</span>
+      </a>
+       <a class="home" href="/found.html">
+          <i class="iconfont icon-sousuo"></i>
+          <span>发现</span>
+      </a>
+       <a class="home" href="#">
+          <i class=" iconfont icon-xiangji"></i>  
+      </a>
+       <a class="home" href="/user.html">
+          <i class="iconfont icon-wode "></i>
+          <span >我的</span>
+      </a>
+       <a class="home" href="#">
+          <i class="iconfont icon-tuichu"></i>
+          <span>退出</span>
+      </a> 
+
+   </footer>
+</body>
+<script type="text/javascript" src="assets/js/modules/lib/zepto.js"></script>
+<script type="text/javascript" src="assets/js/modules/lib/zepto.tap.js"></script>
+<script type="text/javascript" src="assets/js/modules/lib/js/artTamplate.js"></script>
+<script type="text/javascript" src="assets/js/modules/lib/js/iscroll-probe.js"></script>
+<script type="text/javascript">
+  $(function(){
+
+    var myScroll = null;
+     myScroll = new IScroll('wrapper5',{//id代表有固定高度容器盒子即section,也叫可视区域，显示真正内容的一部分
+           mouseWheel: true,
+           probeType: 2,
+           /*startY:-40, *///初始化的时候帮我滚多少
+           scrollbars:true //显示滚动条        
+      });
+
+  })
+
+
+
+
+</script>
+</html>

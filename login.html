@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html style="font-size: 50px">
+<head>
+	<title>足球圈-登入</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="assets/js/modules/lib/css/swiper-3.3.1.min.css">
+	<link rel="stylesheet" href="assets/js/modules/lib/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/login.css">
+	<script type="text/javascript">
+		(function (doc, win) {
+			var docEl = doc.documentElement,
+			resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			recalc = function () {
+				var clientWidth = docEl.clientWidth;
+				if (!clientWidth) return;     
+				docEl.style.fontSize = 100 * (clientWidth /750) + 'px';
+			};
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+</head>
+<body>
+  <header >足球圈——登录</header>
+    
+  <section>
+  	  
+  	 
+  	  	  <input type="text"class="input-id"placeholder="手机号/邮箱/会员名" />
+          
+          <input type="text" class="input-pwd" placeholder="密码" />
+
+          <div class="txt">
+
+          	<p class="txt-con">还没有账号？点击此处立即 <a class="ck" href="reg.<!DOCTYPE html>
+          	<html>
+          	<head>
+          		<title></title>
+          	</head>
+          	<body>
+          	
+          	</body>
+          	</html>">注册</a></p>
+
+          </div>
+
+          <button class="btn">提 交</button>
+ 
+
+  </section>
+
+  <div class="wai-login">
+      <div class="xl-login">
+         <img src="img/">
+      </div>
+      <div class="qq-login"></div>
+  </div>
+
+</body>
+<script src="assets/js/seajs/sea-debug.js"></script>
+<script >
+
+
+     seajs.config({
+              base:"modules/",  //改变sea加载模块的路径，默认是 sea。js所在目录的父节点
+                alias:{ //创建了一个别名
+                  'zepto':'lib/zepto.min.js',
+                  'tap':'lib/zepto.tap.js'
+                },
+                paths:{
+                  /*"zepto":"http://apps.bdimg.com/libs/"*/
+                }
+             })
+  
+     seajs.use('login',function(res){
+          console.log(res)
+
+     })
+
+</script>
+    
+
+
+</html>

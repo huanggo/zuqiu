@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="assets/css/common/swiper-3.3.1.min.css" />
+
+		<link rel="stylesheet" href="assets/css/common/animate.css" />
+		<link rel="stylesheet" href="assets/iconfont/iconfont.css" />
+		<link rel="stylesheet" href="assets/iconfont1/iconfont.css" />
+		<link rel="stylesheet" href="assets/css/common/common.css" />
+		<link rel="stylesheet" href="assets/css/cutecat.css" />
+		
+		<script>
+			 (function (doc, win) {
+            var docEl = doc.documentElement,
+           // orientationchange 事件 用来监听手机屏幕的反转
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+              var clientWidth = docEl.clientWidth;//(window.innerWidth);UC 或者QQ 安卓4.0 以下原生浏览器下面是没有
+              if (!clientWidth) return;     
+               docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            };
+          if (!doc.addEventListener) return;
+          win.addEventListener(resizeEvt, recalc, false);
+          //DOMContentLoaded dom 加载完成，onload 有什么区别 dom css js OK 才执行的
+          doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+		</script>
+	</head>
+	<body>
+		
+		<div class="head2">
+			<a class="hot-point">热点</a>
+			<a class="concern">关注</a>
+				
+		</div>
+		
+		<div class="section3">
+			<div class="cut-name">
+				<img src="assets/images/04index_03.png" />
+				<a>我叫小萌<span>我叫小萌我怕谁！哈哈哈哈！</span></a>
+				<em>3<i class="iconfont icon-dianzan"></i></em>
+			</div>
+			<img src="assets/images/04index_06.png" class="cut-pic" />
+			<div class="name-pic"><p>小丸子啊小丸子</p></div>
+			<div class="cut-name">
+				<img src="assets/images/04index_03.png" />
+				<a>我叫小萌<span>我叫小萌我怕谁！哈哈哈哈！</span></a>
+				<em>3<i class="iconfont icon-dianzan"></i></em>
+			</div>
+		</div>
+		<div class="footer4">
+			<div class="icon">
+				<i class="iconfont icon-shouye-shouye"></i>
+				<a href="main.html">首页</a>
+			</div>
+			<div class="icon">
+				<i class="iconfont icon-sousuo_sousuo"></i>
+				<a href="discover.html">发现</a>
+			</div>
+			<div class="icon camera">
+				<i class="iconfont icon-zhaoxiangji"></i>
+				
+			</div>
+			<div class="icon">
+				<i class="iconfont icon-ren"></i>
+				<a href="me.html">我的</a>
+			</div>
+			<div class="icon">
+				<i class="iconfont icon-tuichu"></i>
+				<a href="login.html">退出</a>
+			</div>
+
+		</div>
+		
+	</body>
+	<script src="assets/js/seajs/sea-debug.js"></script>
+	<script>
+         //配置
+        seajs.config({
+         	base:"modules/",  //改变sea加载模块的路径，默认是 sea。js所在目录的父节点
+            alias:{ //创建了一个别名
+            	'zepto':'lib/zepto.min.js',
+            	'tap':'lib/zepto.tap.js',
+            	'iscroll':'lib/iscroll-probe.js',
+            	'swiper':"lib/swiper-3.3.1.min.js",
+            	'template':"lib/artTemplate.js"
+            },
+            preload:"zepto",
+            paths:{
+            	/*"zepto":"http://apps.bdimg.com/libs/"*/
+            }
+         })
+
+        seajs.use('cutecat',function(res){
+                 
+        })
+	</script>
+	</html>

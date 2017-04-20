@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>发现</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/js/modules/lib/css/iconfont.css">
+
+	<script type="text/javascript">
+		(function (doc, win) {
+			var docEl = doc.documentElement,
+			resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			recalc = function () {
+				var clientWidth = docEl.clientWidth;
+				if (!clientWidth) return;     
+				docEl.style.fontSize = 100 * (clientWidth /640) + 'px';
+			};
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+</head>
+<body>
+ <header>
+   	    
+   	   <a style="color: #fff;font-size: 0.4rem;" href="#">发现</a>
+      
+  </header>
+ 
+    <section class="sec3" >
+      <div class="sec3-search">
+         <input class="sec3-name" type="text" placeholder="请输入昵称" />
+         <button class="sea-btn">搜索</button>
+      </div>
+      <div id="wrapper3">
+
+        <ul class="sec3-ul">
+          <li>
+            <div class="sec2-ul-b1">
+              <img src="assets/img/01_02_03.png">
+              <p class="p-txt1">我叫小梦</p>
+              <p class="p-txt2">我是小萌我怕谁</p>
+              <span class="ac">关注</span>
+            
+         </li> 
+         
+         
+      </ul>
+      </div>
+      
+  </section>
+
+
+<footer id="footer">
+      <a class="home" href="/index.html">
+          <i class="iconfont icon-fangzi"></i>
+          <span class="txt ">首页</span>
+      </a>
+       <a class="home" href="#">
+          <i class="iconfont icon-sousuo sele"></i>
+          <span class="sele">发现</span>
+      </a>
+       <a class="home" href="#">
+          <i class=" iconfont icon-xiangji"></i>  
+      </a>
+       <a class="home" href="/user.html">
+          <i class="iconfont icon-wode"></i>
+          <span >我的</span>
+      </a>
+       <a class="home" href="#">
+          <i class="iconfont icon-tuichu"></i>
+          <span>退出</span>
+      </a> 
+
+   </footer>
+</body>
+<script src="assets/js/seajs/sea-debug.js"></script>
+<script>
+    seajs.config({
+              base:"modules/",  //改变sea加载模块的路径，默认是 sea。js所在目录的父节点
+                alias:{ //创建了一个别名
+                  'zepto':'lib/zepto.min.js',
+                  'tap':'lib/zepto.tap.js',
+                  'Tamplate':'lib/artTemplate.js',
+                  'iscroll':'lib/iscroll-probe.js',
+                  'swiper':'lib/swiper-3.3.1.min.js'
+                },
+                paths:{
+                  /*"zepto":"http://apps.bdimg.com/libs/"*/
+                }
+             })
+      seajs.use('found',function(res){
+    })
+
+</script>
+<script type="text/html" id="into">
+   {{each list2 as val index}}
+       <li>
+            <div class="sec2-ul-b1">
+            <img src="{{val.img}}">
+            <p class="p-txt1">{{val.name}}</p>
+            <p class="p-txt2">{{val.descripition}}</p>
+            <span class="gz">关注</span>
+         </li>
+
+   {{/each}}
+</script>
+</html>

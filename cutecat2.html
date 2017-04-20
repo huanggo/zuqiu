@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title></title>
+<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/js/modules/lib/css/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="assets/js/modules/lib/css/swiper-3.3.1.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/js/modules/lib/css/animate.css">
+  <script type="text/javascript">
+		(function (doc, win) {
+			var docEl = doc.documentElement,
+			resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			recalc = function () {
+				var clientWidth = docEl.clientWidth;
+				if (!clientWidth) return;     
+				docEl.style.fontSize = 100 * (clientWidth /640) + 'px';
+			};
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+</head>
+
+<body>
+ <header>
+   	  <button class="sele">热点</button><button>关注</button>
+      
+  </header>
+  <section class="sec2"  >
+
+
+   <div>
+   	 <div id="iscroll" style="height: 550px;overflow: hidden;">
+   	   <div>
+	       <ul class="sec2-ul">
+
+	       </ul>
+
+	      <div id="upTag_0" style="height:0px;width:100%;background-color: #f3f3f3;text-align: center; line-height: 40px;">上拉</div>
+	  </div>
+   </div>
+
+   </div>
+     
+  </section>
+
+
+<footer id="footer">
+  <a class="home" href="index.html">
+      <i class="iconfont icon-fangzi  sele"></i>
+      <span class="txt sele">首页</span>
+  </a>
+   <a class="home" href="/found.html">
+      <i class="iconfont icon-sousuo"></i>
+      <span>发现</span>
+  </a>
+   <a class="home" href="#">
+      <i class=" iconfont icon-xiangji"></i>  
+  </a>
+   <a class="home" href="/user.html">
+      <i class="iconfont icon-wode"></i>
+      <span>我的</span>
+  </a>
+   <a class="home" href="#">
+      <i class="iconfont icon-tuichu"></i>
+      <span>退出</span>
+  </a> 
+
+</footer>
+<script src="assets/js/seajs/sea-debug.js"></script>
+<script >
+	  seajs.config({
+              base:"modules/",  //改变sea加载模块的路径，默认是 sea。js所在目录的父节点
+                alias:{ //创建了一个别名
+                  'zepto':'lib/zepto.min.js',
+                  'tap':'lib/zepto.tap.js',
+                  'Tamplate':'lib/artTemplate.js',
+                  'iscroll':'lib/iscroll-probe.js',
+                  'swiper':'lib/swiper-3.3.1.min.js'
+                },
+                paths:{
+                  /*"zepto":"http://apps.bdimg.com/libs/"*/
+                }
+             })
+      seajs.use('cutecat',function(res){
+
+    })
+</script>
+<script type="text/html" id="into">
+	 {{each list1 as val index}}
+      <li >
+           <div class="sec2-ul-b1">
+              <img src="{{val.img1}}">
+              <p class="p-txt1">{{val.name}}</p>
+              <p class="p-txt2">{{val.descripition}}</p>
+              <div class="num">
+                 {{val.num}}
+                 <i class="iconfont icon-fangzi"></i>
+              </div>
+           </div>
+        
+           <div class="sec2-ul-b2">
+              <img src="{{val.img2}}">
+              <p>{{val.descripition2}}</p>
+           </div>
+        </li> 
+   {{/each}}
+</script>
+
+</body>
+</html>
